@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    reactRoot: true,
+    surpressHydrationWarning: true,
+  },
 };
 
 export default nextConfig;
