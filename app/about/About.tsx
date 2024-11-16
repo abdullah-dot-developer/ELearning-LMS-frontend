@@ -5,7 +5,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <>
-      <figure className="1500px:px-24 1500px:py-8 900px:flex bg-slate-100 rounded-xl dark:bg-black">
+      <figure className="px-6 1500px:px-24 1500px:py-8 900px:flex rounded-xl dark:text-white text-black">
         <img
           className="rounded-full mx-auto mt-16"
           src={
@@ -19,7 +19,7 @@ const About = () => {
           <blockquote>
             <br />
             <h1 className={`${styles.title} 800px:!text-[45px]`}>
-              What is <span className="text-blue-950">ELearning LMS?</span>
+              What is <span className="text-blue-400">ELearning LMS?</span>
             </h1>
             <br />
             <p className="text-lg font-medium">
@@ -61,14 +61,14 @@ const About = () => {
       </figure>
       <div>
         <br />
-        <h1 className={`${styles.title} 800px:!text-[45px]`}>
+        <h1 className={`${styles.title} !px-2 800px:!text-[45px]`}>
           Unveiling the Creators of{" "}
-          <span className="text-blue-950">ELearning LMS!!</span>
+          <span className="text-blue-400">ELearning LMS!!</span>
         </h1>
         <br />
         <br />
 
-        <div className="lg:px-80 lg:flex md:flex sm:block mx-10 sm:mx-0">
+        <div className="lg:px-80 lg:flex lg:gap-2 md:flex md:gap-2 sm:block mx-10 sm:mx-0">
           <div className="mx-auto w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-10 sm:my-0">
             <div className="flex flex-col items-center pb-10">
               <img

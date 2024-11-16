@@ -13,7 +13,7 @@ const Page = () => {
   return (
     <div>
       <Heading
-        title="About us - CoursePool"
+        title="About us - ELearning"
         description="ELearning is a dynamic online e-learning platform that offers a wide range of courses to students of all ages and backgrounds"
         keywords="Programming, App Development, Web Development, DevOps, Engineering, Machine Learning, UPSC, Cyber Security, Maths, Gate, Jee, Neet"
       />
