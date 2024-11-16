@@ -54,7 +54,7 @@ const NavItems: FC<Props> = ({ activeItems, isMobile }) => {
             </div>
             {navItemsData &&
               navItemsData.map((i, index) => (
-                <Link href="/" key={index} passHref>
+                <Link href={`${i.url}`} key={index} passHref>
                   <span
                     className={`${
                       activeItems === index
