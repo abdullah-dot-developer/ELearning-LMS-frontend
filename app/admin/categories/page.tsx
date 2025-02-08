@@ -16,6 +16,7 @@ const page = () => {
       <div className="flex min-h-screen max-h-full">
         <div className="1500px:w-[16%] w-1/5">
           <AdminSidebar />
+          
         </div>
         <div className="w-[85%]">
           <DashboardHero />
