@@ -85,9 +85,7 @@ const Reviews = () => {
       {reviews?.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((review: any, index: number) => (
-            <>
-              <ReviewsCard review={review} key={index} />
-            </>
+            <ReviewsCard review={review} key={index} />
           ))}
         </div>
       )}

@@ -195,6 +195,7 @@ const Header: FC<Props> = ({ activeItems, setOpen, route, open, setRoute }) => {
           setRoute={setRoute}
           activeItems={activeItems}
           component={Login}
+          refetch={refetch}
         />
       )}
       {route === "Sign-Up" && open && (

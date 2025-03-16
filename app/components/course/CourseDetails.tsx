@@ -58,6 +58,8 @@ const CourseDetails: FC<Props> = ({
     }
   };
 
+  console.log(data, "course data");
+
   return (
     <div>
       <div className="w-[90%] 800px:w-[90%] py-5 m-auto font-Poppins">
@@ -136,7 +138,7 @@ const CourseDetails: FC<Props> = ({
                   Course Details
                 </h1>
                 <p className="text-[18px] mt-[20px] whitespace-pre-line w-full overflow-hidden text-black dark:text-white">
-                  {data.courseDescription}
+                  {data?.courseDescription}
                 </p>
               </div>
               <br />
@@ -239,10 +241,10 @@ const CourseDetails: FC<Props> = ({
 
               <div className="flex items-center">
                 <h1 className="pl-5 text-[25px] text-black dark:text-white">
-                  {data.coursePrice === 0 ? "FREE" : `$${data.coursePrice}`}
+                  {data?.coursePrice === 0 ? "FREE" : `$${data?.coursePrice}`}
                 </h1>
                 <h5 className="pl-3 text-[22px] mt-2 line-through opacity-80 text-black dark:text-white">
-                  ${data.courseEstimatedPrice}
+                  ${data?.courseEstimatedPrice}
                 </h5>
 
                 <h4 className="pl-5 pt-4 text-[22px] text-black dark:text-white">
@@ -253,7 +255,7 @@ const CourseDetails: FC<Props> = ({
                 {isPurchased ? (
                   <Link
                     className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer bg-[crimson]`}
-                    href={`/course-access/${data._id}`}
+                    href={`/course-access/${data?._id}`}
                   >
                     Enter to course
                   </Link>

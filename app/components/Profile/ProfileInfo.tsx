@@ -52,7 +52,7 @@ const ProfileInfoPage: FC<Props> = ({ avatar, user }) => {
     if (isSuccess) {
       toast.success("Profile Image updated successfully!");
     }
-    if (error || updateError) {
+    if (error) {
       console.log(error);
     }
     if (success) {
