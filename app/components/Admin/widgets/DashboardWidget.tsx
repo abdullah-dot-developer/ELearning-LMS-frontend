@@ -100,12 +100,12 @@ const DashboardWidget: FC<Props> = ({ open }) => {
 
   return (
     <div className="mt-[30px] min-h-screen">
-      <div className="grid grid-cols-[70%,30%]">
+      <div className="grid lg:grid-cols-[65%,35%] ">
         <div className="p-8">
           <UsersAnalytics isDashboard={true} />
         </div>
 
-        <div className="pr-8 pt-[80px]">
+        <div className="pr-8 pt-[80px] flex flex-col sm:flex-row gap-3 justify-between">
           <div className="w-full dark:bg-[#111C43] rounded-sm shadow mb-2">
             <div className="flex items-center p-5 justify-between">
               <div className="">
@@ -162,7 +162,7 @@ const DashboardWidget: FC<Props> = ({ open }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-[65%,35%] mt-[-20px]">
+      <div className="grid gap-3 md:grid-cols-[65%,35%] mt-[-20px]">
         <div className="dark:bg-[#111c43] w-[94%] mt-[30px] h-[40vh] shadow-sm m-auto">
           <OrdersAnalytics isDashboard={true} />
         </div>

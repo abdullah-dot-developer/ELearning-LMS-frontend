@@ -49,7 +49,7 @@ interface RowData {
   created_at: string;
 }
 
-const AllCourses: React.FC<Props> = ({ isTeam }) => {
+const AllUsers: React.FC<Props> = ({ isTeam }) => {
   const { theme } = useTheme();
   const { isLoading, data, refetch } = useGetAllUsersQuery(
     {},
@@ -275,4 +275,4 @@ const AllCourses: React.FC<Props> = ({ isTeam }) => {
   );
 };
 
-export default AllCourses;
+export default AllUsers;

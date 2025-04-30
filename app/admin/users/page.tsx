@@ -1,4 +1,5 @@
 "use client";
+import AllUsers from "../../../app/components/Admin/Users/AllUsers";
 import DashboardHero from "../../../app/components/Admin/DashboardHero";
 import AdminSidebar from "../../../app/components/Admin/Sidebar/AdminSidebar";
 import AdminProtected from "../../../app/hooks/adminProtected";
@@ -20,6 +21,7 @@ const Page = () => {
           </div>
           <div className="w-[85%]">
             <DashboardHero />
+            <AllUsers isTeam={false} />
           </div>
         </div>
       </AdminProtected>
